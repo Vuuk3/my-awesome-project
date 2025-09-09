@@ -9,6 +9,8 @@
       content="Краткое описание главной страницы вашего сайта"
     />
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- Шапка сайта -->
@@ -37,6 +39,37 @@
       <section id="portfolio">
         <h2>Портфолио</h2>
         <p>Примеры наших работ...</p>
+      </section>
+      <section id="form">
+        <button type="button" id="openDialog">Отправить данные</button>
+        <dialog id="contactDialog">
+          <form method="dialog" id="contactForm">
+            <label for="email">Электронная почта</label>
+            <input type="email" id="email" required />
+
+            <label for="phone">Номер телефона</label>
+            <input
+              type="tel"
+              id="phone"
+              placeholder="+7 (___) ___-__-__"
+              required
+              pattern="^\\+7 \\(\\d{3}\\) \\d{3}-\\d{2}-\\d{2}$"
+            />
+
+            <label for="date">Дата</label>
+            <input type="date" id="date" required />
+
+            <label for="topic">Пол</label>
+            <select id="topic" required>
+              <option value="man">Мужчина</option>
+              <option value="woman">Женщина</option>
+            </select>
+            <label for="message">Сообщение</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Отправить данные</button>
+          </form>
+          <button type="button" id="closeDialog">Закрыть окно</button>
+        </dialog>
       </section>
       <!-- Секция 3 с якорем -->
       <section id="contacts">
