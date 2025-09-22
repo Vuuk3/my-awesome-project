@@ -6,15 +6,25 @@
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
     <title>Наши контакты</title>
     <meta name="description" content="Наши контакты" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <a href="/">Логотип или название сайта</a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="about.html">О нас</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+    <header class="site-header">
+      <a class="site-header__brand">Кошкин дом</a>
+      <!-- Главное меню навигации -->
+      <nav class="site-nav">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link--main" href="index.html">Главная</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link--about" href="about.html">О нас</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link--contacts" href="contacts.html"
+              >Контакты</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
